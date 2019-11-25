@@ -1,0 +1,62 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "智能生态家居馆",
+				"navigationStyle":"custom"
+			}
+		},{
+            "path" : "pages/news/news",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/shop/shop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "智能生态家居馆",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	  "list": [
+	    {
+	      "pagePath": "pages/index/index",
+	      "text": "首页",
+	      "iconPath": "./static/img/home.jpg",
+	      "selectedIconPath": "./static/img/home-active.jpg"
+	    },
+	    {
+	      "pagePath": "pages/news/news",
+	      "text": "新品",
+	      "iconPath": "./static/img/new.jpg",
+	      "selectedIconPath": "./static/img/new-active.jpg"
+	    },
+	    {
+	      "pagePath": "pages/shop/shop",
+	      "text": "购物车",
+	      "iconPath": "./static/img/cart.jpg",
+	      "selectedIconPath": "./static/img/cart-active.jpg"
+	    },
+	    {
+	      "pagePath": "pages/mine/mine",
+	      "text": "我的",
+	      "iconPath": "./static/img/mine.jpg",
+	      "selectedIconPath": "./static/img/mine-active.jpg"
+	    }
+	  ]
+	}
+}
