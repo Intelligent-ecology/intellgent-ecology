@@ -18,12 +18,6 @@
             "path" : "pages/mine/mine",
             "style" : {}
         }
-        ,{
-            "path" : "pages/details/details",
-            "style" : {
-				"navigationStyle":"custom"
-			}
-        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

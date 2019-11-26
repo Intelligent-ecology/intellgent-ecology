@@ -3,8 +3,7 @@
     "pages/index/index",
     "pages/news/news",
     "pages/shop/shop",
-    "pages/mine/mine",
-    "pages/details/details"
+    "pages/mine/mine"
   ],
   "subPackages": [],
   "window": {
@@ -41,5 +40,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap13.json"
 }

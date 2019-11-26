@@ -7501,9 +7501,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!*************************************!*\
-  !*** D:/uni-app/智能生态家居馆/pages.json ***!
-  \*************************************/
+/*!**************************************!*\
+  !*** D:/SEEC/小程序/智能生态家居馆/pages.json ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8408,20 +8408,20 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 
 /***/ }),
 /* 7 */
-/*!******************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/pages.json?{"type":"style"} ***!
-  \******************************************************/
+/*!*******************************************************!*\
+  !*** D:/SEEC/小程序/智能生态家居馆/pages.json?{"type":"style"} ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom", "usingComponents": {} }, "pages/news/news": { "usingComponents": {} }, "pages/shop/shop": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} }, "pages/details/details": { "navigationStyle": "custom", "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom", "usingComponents": {} }, "pages/news/news": { "usingComponents": {} }, "pages/shop/shop": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!*****************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/pages.json?{"type":"stat"} ***!
-  \*****************************************************/
+/*!******************************************************!*\
+  !*** D:/SEEC/小程序/智能生态家居馆/pages.json?{"type":"stat"} ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8541,9 +8541,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 15 */
-/*!***************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/static/font/iconfont.css ***!
-  \***************************************************/
+/*!****************************************************!*\
+  !*** D:/SEEC/小程序/智能生态家居馆/static/font/iconfont.css ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
