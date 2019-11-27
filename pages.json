@@ -21,8 +21,20 @@
         ,{
             "path" : "pages/details/details",
             "style" : {
-				"navigationStyle":"custom"
+				"navigationStyle":"custom",
+				"usingComponents":{
+					"van-popup":"/wxcomponents/vant/dist/popup/index",
+					"van-toast": "/wxcomponents/vant/dist/toast/index"
+				}
 			}
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/settlement/settlement",
+            "style" : {}
         }
     ],
 	"globalStyle": {

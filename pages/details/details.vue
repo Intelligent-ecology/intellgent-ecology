@@ -172,47 +172,198 @@
 		</scroll-view>
 		<view class="footer">
 			<view class="footer-list">
-				<view class="footer-list-lis">
+				<view class="footer-list-lis" @tap="goIndex">
 					<text class='iconfont icon-shouye'></text>
 					<text>首页</text>
 				</view>
-				<view class="footer-list-lis">
-					<text class='iconfont icon-shoucang'></text>
+				<view class="footer-list-lis" @tap="collect" :data-id="id">
+					<text :class="collection?'iconfont icon-shoucang1':'iconfont icon-shoucang'"></text>
 					<text>收藏</text>
 				</view>
 				<view class="footer-list-lis">
+					<button open-type="contact" plain="true"></button>
 					<text class='iconfont icon-kefu'></text>
 					<text>客服</text>
 				</view>
-		  </view>
-		  <view class="footer-list-1" @tap='isShow' data-index="0">发起拼单</view>
-		  <view class="footer-list-2" @tap='isShow' data-index="1">单独购买</view>
-		  
+			</view>
+			<view class="footer-list-1" @tap='isShow' data-index="0">发起拼单</view>
+			<view class="footer-list-2" @tap='isShow' data-index="1">单独购买</view>
+			<van-popup :show="show" position="bottom" :overlay="true" @close="onClose">
+				<view class="footer-shop">
+					<view class="contents">
+						<image src="../../static/img/2.jpg"></image>
+						<view class="footer-shop-right">
+							<text>￥118-159</text>
+							<text>库存2343件</text>
+							<text>请选择 尺码</text>
+							<text class="iconfont icon-guanbi1" @tap='onClose'></text>
+						</view> 
+					</view>
+					<scroll-view scroll-y="true" class="scrollBox">
+						<view class="size">尺码</view>
+						<view class='list'>
+							<text v-for="(item,index) in size" :key="index" :data-size="index" :class="{'active':curSize===index}" @tap="selectSize">{{item}}</text>
+						</view>
+						<view class='size'>颜色</view>
+						<view class="list">
+							<text v-for="(item,index) in color" :key="index" :data-color="index" :class="{'active':curColor===index}" @tap="selectColor">{{item}}</text>
+						</view>
+						<view class="number">
+							<text>数量</text>
+							<view class='number1'>
+							  
+							<view class='remove' @tap="cutBack">-</view>
+							<input :value="count" :disabled="true" />
+							<view class='add' @tap="add">+</view>
+							</view>
+						</view>
+					</scroll-view>
+					<view class="btn" @tap="goShop">确定</view>
+				</view>
+			</van-popup> 
+			<van-toast id="van-toast" />
 		</view>
 	</view>
 </template>
 
 <script>
+	import Toast from 'wxcomponents/vant/dist/toast/toast';
 	export default {
 		data() {
 			return {
-				product:{
-					id:1,
-					img:"../../static/img/4.png",
-					title:"泰国平面波浪枕",
-					material:"泰国天然乳胶原料",
-					price:"228.0",
-					collect:false
-				}
+				id:'',
+				collection:'',
+				product:'',
+				detail: [],
+				show: false,
+				size: ["60*40cm", "58*36cm"],
+				color: ["白色", "红色"],
+				curSize: null,
+				curColor: null,
+				curIndex: null,
+				dataList: [],
+				count: 1,
+				Operations:'',
+				newsList:[],
+				productList:[]
 			}
 		},
 		methods: {
 			goBack(){
 				uni.navigateBack()
-			}
+			},
+			isShow(e){
+				this.show=true
+				// console.log(e.currentTarget.dataset.index)
+				this.Operations=e.currentTarget.dataset.index
+			},
+			onClose(){
+				this.show=false
+			},
+			// 尺码选择
+			selectSize(e){
+				this.curSize=e.currentTarget.dataset.size
+			},
+			// 颜色选择
+			selectColor(e){
+				this.curColor=e.currentTarget.dataset.color
+			},
+			// 加号按钮
+			add(){
+				this.count++
+			},
+			// 减号按钮
+			cutBack(){
+				this.count--
+				if(this.count<=1){
+					this.count=1
+				}
+			},
+			// 跳转首页
+			goIndex(){
+				uni.switchTab({
+					url:'/pages/index/index'
+				})
+			},
+			// 商品收藏  解决收藏问题
+			collect(e){
+				this.collection=!this.collection
+				var arr=this.newsList
+				for(var i=0;i<arr.length;i++){
+					if(arr[i].id==e.currentTarget.dataset.id){
+						arr[i].collect=this.collection
+						uni.setStorage({
+							key:'collectList',
+							data:JSON.stringify(arr)
+						})
+					}
+				}
+			},
+			// 确定按钮(加入购物车功能)
+			goShop(){
+				if(this.size[this.curSize]&&this.color[this.curColor]){
+					var product={
+						img:this.product.img,
+						title:this.product.title,
+						info:this.product.material,
+						count:this.count,
+						price:this.product.price,
+						allPrice:this.count*this.product.price,
+						size:this.size[this.curSize],
+						color:this.color[this.curColor]
+					}
+					this.productList.push(product)
+					uni.setStorage({
+						key:'cart',
+						data:JSON.stringify(this.productList)
+					})
+					if(this.Operations==0){
+						wx.navigateTo({
+							url:'/pages/settlement/settlement'
+						})
+					}else{
+						wx.switchTab({
+							url:'/pages/shop/shop'
+						})
+					}
+				}else{
+					Toast('请选择商品类型');
+				}
+			},
 		},
 		onLoad(options){
-			console.log(options.id)
+			var _this=this
+			this.product=JSON.parse(options.item)
+			this.id=this.product.id
+			// uni.getStorage({
+			// 	key:'cart',
+			// 	success(e) {
+			// 		_this.productList=JSON.parse(e.detail)
+			// 	}
+			// })
+		},
+		onShow(){
+			var that=this
+			// 判断是否已收藏该id下的商品
+			uni.getStorage({
+				key:'collectList',
+				success(e){
+					// console.log(JSON.parse(e.data))
+					that.newsList=JSON.parse(e.data)||[]
+					// console.log(that.newsList)
+					for(var i=0;i<that.newsList.length;i++){
+						if(that.newsList[i].id==that.id){
+							that.collection=that.newsList[i].collect
+						}
+					}
+				}
+			})
+			uni.getStorage({
+				key:'cart',
+				success(e){
+					that.productList=JSON.parse(e.data)||[]
+				}
+			})
 		}
 	}
 </script>

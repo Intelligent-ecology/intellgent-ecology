@@ -19,7 +19,7 @@
 				<view class="collect">
 					<text @tap="collect" :class="item.collect?'iconfont icon-shoucang1':'iconfont icon-shoucang'" :data-id="index"></text>
 				</view>
-				<view class="product" @tap="goDetail" :data-id="item.id">
+				<view class="product" @tap="goDetail" :data-id="item.id" :data-index="index">
 					<image :src="item.img" mode=""></image>
 				</view>
 				<view class="productInfo">
@@ -86,18 +86,24 @@
 				})
 			},
 			goDetail(e){
-				console.log(e.currentTarget.dataset.id)
+				// console.log(e.currentTarget.dataset.id)
 				wx.navigateTo({
-					url:"../details/details?id="+e.currentTarget.dataset.id
+					url:"../details/details?item="+JSON.stringify(this.newsList[e.currentTarget.dataset.index])
 				})
 			}
 		},
 		onLoad(){
+			uni.setStorage({
+				key:'collectList',
+				data:JSON.stringify(this.newsList)
+			})
+		},
+		onShow(){
 			var that=this
 			uni.getStorage({
 				key:'collectList',
 				success(e){
-					that.newsList=JSON.parse(e.data)||that.newsList
+					that.newsList=JSON.parse(e.data)
 				}
 			})
 		}
