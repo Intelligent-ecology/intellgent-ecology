@@ -1,0 +1,83 @@
+.offer{
+	width: 750rpx;
+	height: 100vh;
+	background: #f7f7f7;
+	box-sizing: border-box;
+	padding: 36rpx;
+	background: #f7f7f7;
+}
+.packetTop{
+	width: 750rpx;
+	height: 53rpx;
+	box-sizing: border-box;
+	padding: 0 37rpx;
+	display: flex;
+}
+.redPacket{
+	width: 175rpx;
+	height: 30rpx;
+	font-size: 32rpx;
+	line-height: 48rpx;
+	color: #333333;
+	display: flex;
+}
+.line{
+	width: 6rpx;
+	height: 53rpx;
+	background-color: #f75f6a;
+	margin-right: 21rpx;
+}
+.content{
+	width: 100%;
+	margin-top: 27rpx;
+}
+.coupon-btn{
+	width: 678rpx;
+	height: 208rpx;
+	color: #fff;
+	display: flex;
+	
+}
+.left{
+	width: 437rpx;
+	height: 208rpx;
+	background-image: url("../../static/img/j1.png");
+	background-size: 100% 100%;
+	box-sizing: border-box;
+	padding: 23rpx 0 34rpx 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}	
+.top{
+	width: 437rpx;
+	height: 73rpx;
+	font-size: 30rpx;
+	display: flex;
+	justify-content: center;
+	line-height: 80rpx;
+}
+.top .price{
+	font-size: 34rpx;
+}
+.top .priceNum{
+	font-size: 66rpx;
+}
+.bottom{
+	font-size: 44rpx;
+}
+.right{
+	width: 241rpx;
+	height: 208rpx;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right view{
+	color: #fff;
+	background: #fe002f;
+	border-radius: 10rpx;
+	padding: 5rpx 10rpx;
+}

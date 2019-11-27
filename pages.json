@@ -17,7 +17,19 @@
         ,{
             "path" : "pages/mine/mine",
             "style" : {}
-        }
+        },
+		{
+		    "path" : "pages/collect/collect",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/coupon/coupon",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/browse/browse",
+		    "style" : {}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

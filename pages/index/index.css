@@ -250,6 +250,8 @@
 	 background: pink;
 	 box-sizing: border-box;
 	 padding: 0 24rpx;
+	 display: flex;
+	 justify-content: space-around;
  }
  .coupon-card{
 	 width:164rpx;
@@ -258,4 +260,457 @@
 	 display: flex;
 	 flex-direction: column;
 	 align-items: center;
+	 /* justify-content: space-between; */
+	 box-sizing: border-box;
+	 padding: 16rpx 12rpx 0 12rpx;
  }
+ .coupon-card image{
+	 width: 140rpx;
+	 height: 80rpx;
+ }
+ .coupon-cardTitle{
+	 color: #1f4739;
+	 font-size: 20rpx;
+ }
+ .coupon-price{
+	 color: #158345;
+	 font-size: 60rpx;
+	 margin-top: 20rpx;
+ }
+ .coupon-receive{
+	 font-size: 30rpx;
+	 margin: 21rpx 0 28rpx 0;
+ }
+ .coupon-collect{
+	 color: #2b7b51;
+	 font-size: 30rpx;
+	 margin-bottom: 23rpx;
+ }
+ 
+ 
+ 
+ 
+ /* ............................................... */
+ .dotey{
+   width: 100%;
+ }
+ .dotey .jewel{
+   position:relative;
+   width:100%;
+   height:148rpx;
+   margin-top: 104rpx;
+ }
+ .dotey .jewel image{
+   position: absolute;
+   bottom:0;
+   left:50%;
+   width:610rpx;
+   height:106rpx;
+   margin-left:-305rpx;
+ }
+ /* 公共样式 */
+ .common{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   height:160rpx;
+ }
+ .common image{
+   display: block;
+   width: 312rpx;
+   height: 30rpx;
+   margin-top: 21rpx;
+ }
+ .common view{
+   font-size: 38rpx;
+   margin-top: 22rpx;
+   margin-bottom: 37rpx;
+ }
+ /* 产品1 */
+   .body1{
+   position: relative;
+   padding: 0 32rpx;
+   box-sizing: border-box;
+ }
+   .body1 .bgImg{
+   width: 100%;
+   height: 512rpx;
+ }
+   .body1 .con{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 225rpx;
+   height: 100rpx;
+ }
+  .body1 .con .iconImg{
+   width: 62rpx;
+   height: 22rpx;
+ }
+ /* 价格 */
+   .body1 .con text{
+   font-size: 22rpx;
+   color: #f00;
+ }
+  .body1 .con text.price{
+   font-size: 32rpx;
+ }
+ /* 立即购买 */
+  .body1 .con .button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150rpx;
+   height: 46rpx;
+   margin-left: 14rpx;
+   margin-bottom: 20rpx;
+   background: rgb(221,0,2);
+   border-radius: 10rpx;
+ }
+ /* 购买文本 */
+   .body1 .con .button text{
+   color: #fff;
+   font-size: 26rpx;
+ }
+ /* 购买图标 */
+   .body1 .con .button icon{
+   display: inline-block;
+   color: #fff;
+   font-size: 20rpx;
+   margin-bottom: 22rpx;
+   margin-left: 10rpx; 
+ }
+ /* 城市 */
+   .city{
+   width: 100%;
+   height: 200rpx;
+   margin-top: -20rpx;
+ }
+   .city image{
+   display: block;
+   width: 100%;
+   height: 100%;
+ }
+ /* 产品2 */
+   .body2{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin-bottom: 56rpx;
+ }
+ /* 产品2主图 */
+   .body2 .img1{
+   display: block;
+   width: 473rpx;
+   height: 368rpx;
+ }
+ /* 产品2内容 */
+   .body2 .bodyCon2{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-right: 40rpx;
+ }
+ /* 产品2内容图片 */
+   .body2 .bodyCon2 .img2{
+   display: block;
+   width: 244rpx;
+   height: 270rpx;
+ }
+ /* 产品2内容价格 */
+   .body2 .bodyCon2 .bodyPrice{
+   color: #f00;
+   font-size: 20rpx;
+   margin-left: 20rpx;
+ }
+   .body2 .bodyCon2 .bodyPrice .price{
+   font-size: 26rpx;
+ }
+ /* 产品2立即购买 */
+   .body2 .bodyCon2 .button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150rpx;
+   height: 46rpx;
+   margin: 19rpx 0 20rpx 18rpx;
+   background: rgb(221,0,2);
+   border-radius: 10rpx;
+ }
+   .body2 .bodyCon2 .button text{
+   color: #fff;
+   font-size: 26rpx;
+ }
+   .body2 .bodyCon2 .button icon{
+   color: #fff;
+   font-size: 20rpx;
+   margin-bottom: 22rpx;
+   margin-left: 10rpx; 
+ }
+ /* 产品3内容 */
+   .body3 .person{
+   width: 100%;
+   height: 360rpx;
+   margin-bottom: 120rpx;
+ }
+   .body3 .person image{
+   display: block;
+   width: 100%;
+   height: 100%;
+ }
+ /* 产品3、4产品 */
+   .body3 .commodity,.body4 .commodity{
+   display: flex;
+   width: 100%;
+ }
+   .body3 .commodity{
+   padding: 0 15rpx;
+   box-sizing: border-box;
+ }
+   .body4 .commodity{
+   padding: 0 12rpx;
+   box-sizing: border-box;
+ }
+ /* 产品 */
+   .body3 .commodity .center1,.body4 .commodity .center1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   margin-right: 44rpx;
+ }
+   .body3 .commodity .center1:last-child,.body4 .commodity .center1:last-child{
+   margin-right: 0;
+ }
+ /* 产品标题 */
+   .body3 .commodity .center1 .title,.body4 .commodity .center1 .title{
+   margin-bottom: 16rpx;
+ }
+ /* 产品图片 */
+   .body3 .commodity .center1 .img3,.body4 .commodity .center1 .img3{
+   width: 342rpx;
+   height: 210rpx;
+   margin-bottom: 26rpx;
+ }
+ /* 产品下内容 */
+   .body3 .commodity .center1 .bottom,.body4 .commodity .center1 .bottom{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+   .body3 .commodity .center1 .bottom .iconimg,.body4 .commodity .center1 .bottom .iconimg{
+   width: 48rpx;
+   height: 16rpx;
+ }
+   .body3 .commodity .center1 .bottom text,.body4 .commodity .center1 .bottom text{
+   color: #f00;
+   font-size: 20rpx;
+ }
+ .body3 .commodity .center1 .bottom text.price,.body4 .commodity .center1 .bottom text.price{
+   font-size: 32rpx;
+ }
+  .body3 .commodity .center1 .bottom .button,.body4 .commodity .center1 .bottom .button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150rpx;
+   height: 46rpx;
+   margin: 19rpx 0 20rpx 18rpx;
+   background: rgb(221,0,2);
+   border-radius: 10rpx;
+ }
+   .body3 .commodity .center1 .bottom .button text,.body4 .commodity .center1 .bottom .button text{
+   color: #fff;
+   font-size: 26rpx;
+ }
+   .body3 .commodity .center1 .bottom .button icon,.body4 .commodity .center1 .bottom .button icon{
+   color: #fff;
+   font-size: 20rpx;
+   margin-bottom: 22rpx;
+   margin-left: 10rpx; 
+ }
+ /* 女孩 */
+   .girl{
+   width: 100%;
+   height: 490rpx;
+   margin-top: 60rpx;
+ }
+  .girl image{
+   display: block;
+   width: 100%;
+   height: 100%;
+ }
+ /* 排行榜开始 */
+ .row{
+   width: 100%;
+   height: 100%;
+   padding-top: 52rpx;
+   box-sizing: border-box;
+   background: #f4f4f4;
+ }
+ /* 排行榜头开始 */
+ .row .header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 45rpx;
+   margin-bottom: 38rpx;
+   box-sizing: border-box;
+ }
+ .row .header .ranking{
+   font-size: 32rpx;
+ }
+ .row .header .volume text{
+   font-size: 22rpx;
+   padding-bottom: 8rpx;
+ }
+ .row .header .volume text.active{
+   border-bottom: 4rpx solid #000;
+ }
+ /* 排行内容 */
+ .row .rowList{
+   display: flex;
+   justify-content: center;
+ }
+ .row .rowList .center{
+   width: 231rpx;
+   height: 292rpx;
+   margin-right: 19rpx;
+   background: #fff;
+   border-radius: 10rpx;
+ }
+ .row .rowList .center:last-child{
+   margin-right: 0;
+ }
+ /* 图片 */
+ .row .rowList .center image{
+   width: 231rpx;
+   height: 150rpx;
+   border-radius: 10rpx 10rpx 0 0;
+ }
+ /* 序号 */
+ .row .rowList .center .circle{
+   display: flex;
+   justify-content: center;
+   margin-top: -20rpx;
+   margin-bottom: 20rpx;
+ }
+ .row .rowList .center .circle text{
+   width: 48rpx;
+   height: 48rpx;
+   color: #fff;
+   font-size: 30rpx;
+   text-align: center;
+   background: #0e8b4c;
+   border-radius: 50%;
+ }
+ /* 描述 */
+ .row .rowList .center .text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 0 20rpx;
+   box-sizing: border-box;
+ }
+ .row .rowList .center .text text{
+   font-size: 19rpx; 
+   margin-bottom: 10rpx;
+ }
+ .row .rowList .center .text .person1{
+   font-size: 24rpx;
+   color: #ccc;
+ }
+ /* 排行榜头结束 */
+ /* 排行榜结束 */
+ /* 猜你喜欢开始 */
+ .like{
+   width: 100%;
+   background: #f1f6f4;
+   padding: 0 21rpx;
+   box-sizing: border-box;
+ }
+ /* 猜你喜欢标题 */
+ .like .title{
+   width: 100%;
+   font-size: 34rpx;
+   padding: 36rpx 0 60rpx 30rpx;
+   box-sizing: border-box;
+ }
+ /* 猜你喜欢内容 */
+ .likeList{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width:100%;
+ }
+ .like-item{
+   width:48%;
+   margin-bottom:25rpx;
+   background:#fff;
+   border-radius: 20rpx;
+   overflow: hidden;
+ }
+ .like-item:nth-of-type(2n){
+   padding-right: 0;
+   margin-left: 4rpx;
+ }
+ .like-item image{
+   width:100%;
+   height:287rpx;
+   margin-bottom: 32rpx;
+ }
+ .like-item view{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+ .new_text1{
+   font-size:28rpx;
+   box-sizing: border-box;
+   padding: 0 89rpx 15rpx 10rpx;
+ }
+ .new_text2{
+   color:#ccc;
+   font-size: 24rpx;
+   padding: 0 89rpx 31rpx 10rpx;
+   box-sizing: border-box;
+ }
+ .new_text3{
+   color:red;
+   font-size: 20rpx;
+   padding-left: 15rpx;
+   padding-bottom: 33rpx;
+   box-sizing: border-box;
+ }
+ /* 查看全部开始 */
+ .seeMore{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 86rpx;
+   background: #fff;
+   border-radius: 20rpx;
+   margin-bottom: 18rpx;
+ }
+ .seeMore text{
+   font-size: 24rpx;
+ }
+ /* 查看全部结束 */
+ /* 猜你喜欢结束 */
+ /* 内容结束 */
+ /* 拼团下边结束 */
+ /* 拼团样式结束 */
+ /*加载*/
+ .loading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+ 
