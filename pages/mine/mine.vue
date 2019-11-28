@@ -3,7 +3,8 @@
 		<!-- 头部开始 -->
 		<view class="header">
 			<view class="icon">
-				
+				<text class="iconfont icon-shezhicopy"></text>
+				<text class="iconfont icon-xinxi"></text>
 			</view>
 			<view class="buddha">
 				<view class="headerImg">
@@ -19,38 +20,69 @@
 				我的订单
 			</view>
 			<view class="allOrder" @click="allOrder">
-				查看全部订单
+				查看全部订单<text class="iconfont icon-icon"></text>
 			</view>
 		</view>
 		<!-- 我的订单结束 -->
 		<!-- 待收货、待发货，待评价开始 -->
 		<view class="button">
-			<view class="payment" @click="payment">代付款</view>
-			<view class="share" @click="share">代分享</view>
-			<view class="deliver" @click="deliver">代发货</view>
-			<view class="receiving" @click="receiving">代收货</view>
-			<view class="evaluate" @click="evaluate">代评价</view>
+			<view class="payment" @click="payment">
+				<view><text class="iconfont icon-daifukuan"></text></view>
+				<view>待付款</view>
+			</view>
+			<view class="share" @click="share">
+				<view><text class="iconfont icon-daifenxiang"></text></view>
+				<view>待分享</view>
+			</view>
+			<view class="deliver" @click="deliver">
+				<view><text class="iconfont icon-daifahuo"></text></view>
+				<view>待发货</view>
+			</view>
+			<view class="receiving" @click="receiving">
+				<view><text class="iconfont icon-shoucangtubiao-"></text></view>
+				<view>待收货</view>
+			</view>
+			<view class="evaluate" @click="evaluate">
+				<view><text class="iconfont icon-daipingjia"></text></view>
+				<view>待评价</view>
+			</view>
 			
 		</view>
 		<!-- 待收货、待发货，待评价结束 -->
 		<!-- 优惠券开始 -->
 		<view class="coupon" @click="coupon">
-			优惠券
+			<view class="icon-style">
+				<text class="iconfont icon-youhuiquan1"></text>
+				优惠券
+			</view>
+			<text class="iconfont icon-icon"></text>
 		</view>
 		<!-- 优惠券结束 -->
 		<!-- 商品收藏开始 -->
 		<view class="collect" @click="collect">
-			商品收藏
+			<view class="icon-style">
+				<text class="iconfont icon-shangpinshoucang"></text>
+				商品收藏
+			</view>
+			<text class="iconfont icon-icon"></text>
 		</view>
 		<!-- 商品收藏结束 -->
 		<!-- 历史浏览开始 -->
 		<view class="browse" @click="browse">
-			历史浏览
+			<view class="icon-style">
+				<text class="iconfont icon-lishiliulan"></text>
+				历史浏览
+			</view>
+			<text class="iconfont icon-icon"></text>
 		</view>
 		<!-- 历史浏览结束 -->
 		<!-- 退款售后开始 -->
 		<view class="refund" @click="refund">
-			退款售后
+			<view class="icon-style">
+				<text class="iconfont icon-tuikuan1"></text>
+				退款售后
+			</view>
+			<text class="iconfont icon-icon"></text>
 		</view>
 		<!-- 退款售后结束 -->	
 	</view>
