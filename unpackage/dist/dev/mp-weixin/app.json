@@ -4,10 +4,16 @@
     "pages/news/news",
     "pages/shop/shop",
     "pages/mine/mine",
+<<<<<<< HEAD
     "pages/details/details",
     "pages/cart/cart",
     "pages/settlement/settlement",
     "pages/location/location"
+=======
+    "pages/collect/collect",
+    "pages/coupon/coupon",
+    "pages/browse/browse"
+>>>>>>> d5b38e7a784d74d92caabdca76ae02ad763043a2
   ],
   "subPackages": [],
   "window": {
@@ -44,5 +50,10 @@
       }
     ]
   },
+<<<<<<< HEAD
   "usingComponents": {}
+=======
+  "usingComponents": {},
+  "sitemapLocation": "sitemap3.json"
+>>>>>>> d5b38e7a784d74d92caabdca76ae02ad763043a2
 }

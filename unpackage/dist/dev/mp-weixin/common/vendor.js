@@ -8528,6 +8528,7 @@ main();
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+<<<<<<< HEAD
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _utils = __webpack_require__(/*! ../common/utils */ 53);
 var defaultOptions = {
   type: 'text',
@@ -8594,6 +8595,9 @@ Toast.resetDefaultOptions = function () {
   currentOptions = Object.assign({}, defaultOptions);
 };var _default =
 Toast;exports.default = _default;
+=======
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom", "usingComponents": {} }, "pages/news/news": { "usingComponents": {} }, "pages/shop/shop": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} }, "pages/collect/collect": { "usingComponents": {} }, "pages/coupon/coupon": { "usingComponents": {} }, "pages/browse/browse": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+>>>>>>> d5b38e7a784d74d92caabdca76ae02ad763043a2
 
 /***/ }),
 
