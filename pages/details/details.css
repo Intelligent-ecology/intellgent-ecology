@@ -15,8 +15,8 @@
 	height:100%;
 }
 .topImg view{
-	position: absolute;
-	top: 20rpx;
+	position: fixed;
+	top: 120rpx;
 	width: 76rpx;
 	height: 76rpx;
 	background: #1f1f1f;
@@ -29,7 +29,7 @@
 	left: 20rpx;
 }
 .topImg view.cart{
-	right: 120rpx;
+	right: 20rpx;
 }
 .topImg view.more{
 	right: 20rpx;
@@ -45,10 +45,10 @@
 	background: #fff;
 }
 .norms{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 684rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 684rpx;
 }
 .norms text{
 	display: inline-block;

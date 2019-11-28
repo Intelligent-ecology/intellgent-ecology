@@ -10,9 +10,9 @@
 				<view class='cart'>
 					<text class='iconfont icon-gouwuche'></text>
 				</view>
-				<view class='more'>
+				<!-- <view class='more'>
 					<text class='iconfont icon-sangedian'></text>
-				</view>
+				</view> -->
 			</view>
 			<!-- 商品信息 -->
 			<view class='product'>
@@ -302,26 +302,44 @@
 			// 确定按钮(加入购物车功能)
 			goShop(){
 				if(this.size[this.curSize]&&this.color[this.curColor]){
-					var product={
-						img:this.product.img,
-						title:this.product.title,
-						info:this.product.material,
-						count:this.count,
-						price:this.product.price,
-						allPrice:this.count*this.product.price,
-						size:this.size[this.curSize],
-						color:this.color[this.curColor]
-					}
-					this.productList.push(product)
-					uni.setStorage({
-						key:'cart',
-						data:JSON.stringify(this.productList)
-					})
+					
+					
 					if(this.Operations==0){
+						var product={
+							img:this.product.img,
+							title:this.product.title,
+							info:this.product.material,
+							count:this.count,
+							price:this.product.price,
+							allPrice:this.count*this.product.price,
+							size:this.size[this.curSize],
+							color:this.color[this.curColor],
+							check:true
+						}
+						uni.setStorage({
+							key:'cart',
+							data:JSON.stringify([product])
+						})
 						wx.navigateTo({
 							url:'/pages/settlement/settlement'
 						})
 					}else{
+						var product={
+							img:this.product.img,
+							title:this.product.title,
+							info:this.product.material,
+							count:this.count,
+							price:this.product.price,
+							allPrice:this.count*this.product.price,
+							size:this.size[this.curSize],
+							color:this.color[this.curColor],
+							check:false
+						}
+						this.productList.push(product)
+						uni.setStorage({
+							key:'cart',
+							data:JSON.stringify(this.productList)
+						})
 						wx.switchTab({
 							url:'/pages/shop/shop'
 						})

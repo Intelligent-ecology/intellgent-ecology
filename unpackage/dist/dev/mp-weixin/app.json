@@ -6,7 +6,8 @@
     "pages/mine/mine",
     "pages/details/details",
     "pages/cart/cart",
-    "pages/settlement/settlement"
+    "pages/settlement/settlement",
+    "pages/location/location"
   ],
   "subPackages": [],
   "window": {
@@ -43,6 +44,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap75.json"
+  "usingComponents": {}
 }
