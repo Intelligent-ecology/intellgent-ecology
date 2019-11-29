@@ -1,0 +1,107 @@
+.collect{
+	width: 100vw;
+	height: 100vh;
+}
+.content{
+	width: 100vw;
+	min-height: 100vh;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 30rpx;
+	margin-top: 20rpx;
+}
+.commodity{
+	width: 690rpx;
+	height: 259rpx;
+	background: #fff;
+	-webkit-box-shadow: 0rpx 3rpx 7rpx 0rpx 
+		rgba(0, 0, 0, 0.06), 
+		inset 0rpx 1rpx 2rpx 0rpx 
+		rgba(228, 228, 228, 0.35);
+	        box-shadow: 0rpx 3rpx 7rpx 0rpx 
+		rgba(0, 0, 0, 0.06), 
+		inset 0rpx 1rpx 2rpx 0rpx 
+		rgba(228, 228, 228, 0.35);
+	border-radius: 6rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 20rpx 0 40rpx 14rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 30rpx;
+}
+.img{
+	width: 192rpx;
+	height: 199rpx;
+	background: #50aee0;
+	border-radius: 10rpx;
+}
+.content-text{
+	width: 480rpx;
+	margin-left: 18rpx;
+}
+.content-text .title{
+	width: 461rpx;
+	height: 62rpx;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #383a3a;
+}
+.depreciate{
+	width: 172rpx;
+	height: 17rpx;
+	font-size: 18rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 22rpx;
+	letter-spacing: 0rpx;
+	color: #ff3f3f;
+	margin-top: 14rpx ;
+}
+.price{
+	width: 100%;
+	height: 38rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top:62rpx ;
+}
+.priceNum{
+	width: 132rpx;
+	height: 29rpx;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 26rpx;
+	letter-spacing: 0rpx;
+	color: #ff3f3f;
+}
+.priceNum text{
+	font-size: 36rpx;
+	font-weight: normal;
+	letter-spacing: 0rpx;
+	color: #ff3f3f;
+}
+.collectPeople{
+	width: 135rpx;
+	height: 22rpx;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 20rpx;
+	letter-spacing: 0rpx;
+	color: #b9b9b9;
+	margin-left: 167rpx;
+	margin-top: 10rpx;
+}
+
