@@ -33,7 +33,7 @@
 				<image src="../../static/img/add.png"></image>
 				<text>添加新收货地址</text>
 			</van-button>
-			<van-popup :show="show" @close="onClose">
+			<!-- <van-popup :show="show" @close="onClose">
 				<view class="popup_content">
 					<view class="popup_top">
 						<text>添加新收货地址</text>
@@ -58,7 +58,7 @@
 					</view>
 					<van-button size="large" type="default" class="save">保存</van-button>
 				</view>
-			</van-popup>
+			</van-popup> -->
 		</view>
 	</view>
 </template>

@@ -1617,9 +1617,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 15:
-/*!***************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/static/font/iconfont.css ***!
-  \***************************************************/
+/*!*********************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/push/intellgent-ecology/static/font/iconfont.css ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7622,9 +7622,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!*************************************!*\
-  !*** D:/uni-app/智能生态家居馆/pages.json ***!
-  \*************************************/
+/*!*******************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/push/intellgent-ecology/pages.json ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8520,16 +8520,15 @@ main();
 
 /***/ }),
 
-/***/ 52:
-/*!****************************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/wxcomponents/vant/dist/toast/toast.js ***!
-  \****************************************************************/
+/***/ 54:
+/*!**********************************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/push/intellgent-ecology/wxcomponents/vant/dist/toast/toast.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _utils = __webpack_require__(/*! ../common/utils */ 53);
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _utils = __webpack_require__(/*! ../common/utils */ 55);
 var defaultOptions = {
   type: 'text',
   mask: false,
@@ -8595,16 +8594,13 @@ Toast.resetDefaultOptions = function () {
   currentOptions = Object.assign({}, defaultOptions);
 };var _default =
 Toast;exports.default = _default;
-=======
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom", "usingComponents": {} }, "pages/news/news": { "usingComponents": {} }, "pages/shop/shop": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} }, "pages/collect/collect": { "usingComponents": {} }, "pages/coupon/coupon": { "usingComponents": {} }, "pages/browse/browse": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
->>>>>>> d5b38e7a784d74d92caabdca76ae02ad763043a2
 
 /***/ }),
 
-/***/ 53:
-/*!*****************************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/wxcomponents/vant/dist/common/utils.js ***!
-  \*****************************************************************/
+/***/ 55:
+/*!***********************************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/push/intellgent-ecology/wxcomponents/vant/dist/common/utils.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8656,21 +8652,21 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ }),
 
 /***/ 7:
-/*!******************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/pages.json?{"type":"style"} ***!
-  \******************************************************/
+/*!************************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/push/intellgent-ecology/pages.json?{"type":"style"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom", "usingComponents": {} }, "pages/news/news": { "usingComponents": {} }, "pages/shop/shop": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} }, "pages/details/details": { "navigationStyle": "custom", "usingComponents": {} }, "pages/cart/cart": { "usingComponents": {} }, "pages/settlement/settlement": { "usingComponents": {} }, "pages/location/location": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom" }, "pages/news/news": {}, "pages/shop/shop": {}, "pages/mine/mine": {}, "pages/details/details": { "navigationStyle": "custom" }, "pages/cart/cart": {}, "pages/settlement/settlement": {}, "pages/location/location": {}, "pages/collect/collect": {}, "pages/coupon/coupon": {}, "pages/browse/browse": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 
 /***/ 8:
-/*!*****************************************************!*\
-  !*** D:/uni-app/智能生态家居馆/pages.json?{"type":"stat"} ***!
-  \*****************************************************/
+/*!***********************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/push/intellgent-ecology/pages.json?{"type":"stat"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

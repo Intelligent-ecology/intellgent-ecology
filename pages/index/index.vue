@@ -1,11 +1,24 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
-<<<<<<< HEAD
-=======
+		<image class="backgroundimg" src="../../static/img/bg.jpg"/>
+				<!-- 轮播图开始 -->
+				<view class="swiper">
+					<!-- 左边框 -->
+					<view class="left"></view>
+					<!-- 轮播图图片 -->
+					<view class="home_list">
+						<swiper indicator-dots="true" autoplay="true" interval="2000" circular="true">
+						  <block v-for="(item, index) in banner" :key="index">
+						    <swiper-item>
+						      <image :src="item"></image>
+						    </swiper-item>
+						  </block>
+						</swiper>
+					</view>
+					<!-- 右边框 -->
+					<view class="right"></view>
+				</view>
+
 		<!-- 轮播图结束 -->
 		<!-- 拼团开始 -->
 		<view class="pinker">
@@ -244,7 +257,7 @@
 		  <!-- 排行内容 -->
 		  <view class="rowList">
 		      <!-- 商品 -->
-			<block v-for="item,index in 3" :key="index">
+			<block v-for="(item,index) in 3" :key="index">
 		      <view class='center'>
 		        <!-- 图片 -->
 		        <image src="../../static/img/pillow_2.gif" ></image>
@@ -269,7 +282,7 @@
 		<view class="like">
 		  <view class='title'>猜你喜欢</view>
 		  <view class="likeList">
-		    <block v-for="item,index in 4" :key="index">
+		    <block v-for="(item,index) in 4" :key="index">
 		      <view class="like-item" bindtap='goDetail'>
 		        <image src="../../static/img/pillow_2.gif"></image>
 		        <view class="new_text1">泰国波浪平面枕</view>
@@ -285,10 +298,6 @@
 		  <!-- 查看全部宝贝结束 -->
 		</view>
 		<!-- 猜你喜欢结束 -->
-		
-		
-		
->>>>>>> d5b38e7a784d74d92caabdca76ae02ad763043a2
 	</view>
 </template>
 
@@ -296,7 +305,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				banner:["../../static/img/1.jpg","../../static/img/bg.jpg"]
 			}
 		},
 		onLoad() {
@@ -309,30 +319,6 @@
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	@import url("./index.css");
 </style>
   

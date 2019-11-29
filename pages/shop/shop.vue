@@ -71,7 +71,10 @@
 		methods: {
 			// 去逛逛
 			goAround(){
-				console.log(1)
+				// console.log(1)
+				wx.switchTab({
+					url:"/pages/news/news"
+				})
 			},
 			// 单选
 			check(e){
