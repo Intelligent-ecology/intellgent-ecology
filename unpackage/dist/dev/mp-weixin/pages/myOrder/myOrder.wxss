@@ -1,0 +1,215 @@
+.order {
+	width: 100%;
+	height: 100%;
+	/* padding-bottom: 30rpx; */
+	background: #f2f2f2;
+}
+
+/* 订单编号 */
+.order-list .lists .orderNumber {
+	background: #f2f2f2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height: 78rpx;
+	font-size: 22rpx;
+	color: #969696;
+	padding: 0 20rpx 0 23rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.order-list .lists .orderNumber text.over {
+	color: #24ab63;
+}
+
+/* 内容样式 */
+.order .order-list {
+	width: 100%;
+}
+.order .order-list .lists {
+	margin-bottom: 30rpx;
+	background: #fff;
+}
+.order .order-list .lists:last-child {
+	margin-bottom: 0;
+}
+
+/* 内容上部 */
+.order .order-list .lists .list-top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100%;
+	height: 205rpx;
+	background: #fff;
+	padding: 22rpx;
+}
+.order .order-list .lists .list-top image {
+	width: 161rpx;
+	height: 160rpx;
+	border-radius: 5rpx;
+	/* background: #f00; */
+}
+
+/* 内容介绍 */
+.order .order-list .lists .list-top .listReight {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-left: 38rpx;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	height: 160rpx;
+	padding: 15rpx 0 26rpx 0;
+}
+
+/* 文本介绍 */
+.order .order-list .lists .list-top .listReight .txt {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.order .order-list .lists .list-top .listReight .txt .theme {
+	font-size: 26rpx;
+	line-height: 20rpx;
+	color: #383a3a;
+}
+.order .order-list .lists .list-top .listReight .txt .theme-bottom {
+	font-size: 22rpx;
+	line-height: 20rpx;
+	color: #bebebe;
+}
+
+/* 价格描述 */
+.order .order-list .lists .list-top .listReight .pri {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+.order .order-list .lists .list-top .listReight .pri .pris {
+	font-size: 24rpx;
+	line-height: 40rpx;
+	color: #dc3025;
+}
+.order .order-list .lists .list-top .listReight .pri .nums {
+	font-size: 24rpx;
+	line-height: 20rpx;
+	color: #bebebe;
+}
+
+/* 待支付 */
+.order .order-list .lists .list-top .listReight .pri .dai {
+	position: relative;
+	top: 20rpx;
+	font-size: 26rpx;
+	line-height: 20rpx;
+	color: #ff3f3f;
+}
+
+/* 合计 */
+.order .order-list .lists .allPrice {
+	height: 78rpx;
+	line-height: 78rpx;
+	text-align: right;
+	font-size: 24rpx;
+	color: #8b8b8b;
+	border-bottom: 1rpx solid #ddd;
+	padding-right: 27rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* 评价模块 */
+.order .order-list .lists .delAndre {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	width: 100%;
+	height: 96rpx;
+	font-size: 26rpx;
+}
+.order .order-list .lists .delAndre text {
+	width: 144rpx;
+	height: 55rpx;
+	text-align: center;
+	line-height: 55rpx;
+	border-radius: 28rpx;
+	border: 1rpx solid #aaa8a8;
+	margin-top: 20rpx;
+	color: #aaa8a8;
+}
+
+/* 评价 */
+.order .order-list .lists .delAndre .recommend {
+	margin: 20rpx 21rpx 0 0;
+	border: 1rpx solid #1ca95e;
+	color: #1ca95e;
+}
+
+/* 删除 */
+.order .order-list .lists .delAndre .del {
+	margin: 20rpx 11rpx 0;
+}
+.order .order-list .lists .delAndre .goPay {
+	margin: 20rpx 21rpx 0 0;
+}
+
+/* 去支付 */
+.order .order-list .lists .delAndre .removeList {
+	margin: 20rpx 21rpx 0 11rpx;
+	border: none;
+	color: #fff;
+	background: #f00;
+}
+

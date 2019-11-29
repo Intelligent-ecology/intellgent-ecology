@@ -65,7 +65,19 @@
 			"path": "pages/browse/browse",
 			"style": {}
 		}
-	],
+	    ,{
+            "path" : "pages/myOrder/myOrder",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/appref/appref",
+            "style" : {
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/dist/popup/index"
+				}
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "智能生态家居馆",

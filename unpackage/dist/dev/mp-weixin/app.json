@@ -10,7 +10,9 @@
     "pages/location/location",
     "pages/collect/collect",
     "pages/coupon/coupon",
-    "pages/browse/browse"
+    "pages/browse/browse",
+    "pages/myOrder/myOrder",
+    "pages/appref/appref"
   ],
   "subPackages": [],
   "window": {
@@ -47,6 +49,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap54.json"
+  "usingComponents": {}
 }
