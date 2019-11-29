@@ -1,0 +1,116 @@
+/* 推荐部分 */
+.topImg.data-v-0477610e{
+	position: relative;
+	width:100vw;
+	height:340rpx;
+}
+.topImg image.data-v-0477610e{
+	display: block;
+	width:100%;
+	height: 100%;
+}
+.recommend.data-v-0477610e{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:200rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	color:#FFFFFF;
+}
+.recommend .txt1.data-v-0477610e{
+	font-size: 32rpx;
+	margin-bottom:20rpx;
+}
+.recommend .txt1 text.data-v-0477610e:nth-child(1){
+	margin-right:10rpx;
+}
+.recommend .txt2.data-v-0477610e{
+	font-size: 24rpx;
+	letter-spacing:20rpx
+}
+/* 推荐列表 */
+.newsList.data-v-0477610e {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 30rpx 0;
+	margin-top: 34rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	/* justify-content: space-around; */
+}
+.newsItem.data-v-0477610e{
+	width: 47%;
+	height: 100%; 
+	margin-bottom: 20rpx;
+	border-radius: 20rpx;
+	-webkit-box-shadow: 0 0 10rpx 2rpx #ccc;
+	        box-shadow: 0 0 10rpx 2rpx #ccc;
+	overflow: hidden;
+}
+.newsItem.data-v-0477610e:nth-child(1){
+	margin-right: 5%;
+}
+.newsItem .collect.data-v-0477610e{
+	height:60rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-right: 10rpx;
+}
+.newsItem .product image.data-v-0477610e{
+	display: block;
+	width:100%;
+	height:300rpx;
+}
+.productInfo.data-v-0477610e{
+	padding:0 20rpx 10rpx;
+	margin-top: 55rpx;
+}
+.title.data-v-0477610e{
+	font-size: 32rpx;
+	color: #333;
+	margin-top: 55rpx;
+}
+.material.data-v-0477610e{
+	font-size: 24rpx;
+	color: #999;
+	margin-top: 17rpx;
+}
+.price.data-v-0477610e{
+	font-size: 32rpx;
+	color: #df0000;
+	margin-top: 46rpx;
+	margin-bottom: 12rpx;
+}
+

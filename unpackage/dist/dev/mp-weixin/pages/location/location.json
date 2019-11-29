@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "/wxcomponents/vant/dist/icon/index",
+    "van-button": "/wxcomponents/vant/dist/button/index",
+    "van-popup": "/wxcomponents/vant/dist/popup/index",
+    "van-cell": "/wxcomponents/vant/dist/cell/index",
+    "van-field": "/wxcomponents/vant/dist/field/index",
+    "van-cell-group": "/wxcomponents/vant/dist/cell-group/index"
+  }
+}

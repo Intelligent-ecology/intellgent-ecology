@@ -4,33 +4,72 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "智能生态家居馆",
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
 			}
-		},{
-            "path" : "pages/news/news",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/shop/shop",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/mine/mine",
-            "style" : {}
-        },
-		{
-		    "path" : "pages/collect/collect",
-		    "style" : {}
+		}, {
+			"path": "pages/news/news",
+			"style": {}
+		}, {
+			"path": "pages/shop/shop",
+			"style": {}
+		}, {
+			"path": "pages/mine/mine",
+			"style": {}
+		}, {
+			"path": "pages/details/details",
+			"style": {
+				"navigationStyle": "custom",
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/dist/popup/index",
+					"van-toast": "/wxcomponents/vant/dist/toast/index"
+				}
+			}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {}
+		}, {
+			"path": "pages/settlement/settlement",
+			"style": {
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/dist/popup/index",
+					"van-dialog": "/wxcomponents/vant/dist/dialog/index",
+					"van-icon": "/wxcomponents/vant/dist/icon/index",
+					"van-radio": "/wxcomponents/vant/dist/radio/index",
+					"van-radio-group": "/wxcomponents/vant/dist/radio-group/index",
+					"van-cell": "/wxcomponents/vant/dist/cell/index",
+					"van-cell-group": "/wxcomponents/vant/dist/cell-group/index"
+				}
+			}
+		}, {
+			"path": "pages/location/location",
+			"style": {
+				"usingComponents": {
+					"van-icon": "/wxcomponents/vant/dist/icon/index",
+					"van-button": "/wxcomponents/vant/dist/button/index",
+					"van-popup": "/wxcomponents/vant/dist/popup/index",
+					"van-cell": "/wxcomponents/vant/dist/cell/index",
+					"van-field": "/wxcomponents/vant/dist/field/index",
+					"van-cell-group": "/wxcomponents/vant/dist/cell-group/index"
+				}
+			}
 		},
 		{
-		    "path" : "pages/coupon/coupon",
-		    "style" : {}
+			"path": "pages/collect/collect",
+			"style": {}
 		},
 		{
-		    "path" : "pages/browse/browse",
-		    "style" : {}
+			"path": "pages/coupon/coupon",
+			"style": {}
+		},
+		{
+			"path": "pages/browse/browse",
+			"style": {}
+		},
+		{
+			"path": "pages/refund/refund",
+			"style": {}
 		}
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "智能生态家居馆",
@@ -38,31 +77,30 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-	  "list": [
-	    {
-	      "pagePath": "pages/index/index",
-	      "text": "首页",
-	      "iconPath": "./static/img/home.jpg",
-	      "selectedIconPath": "./static/img/home-active.jpg"
-	    },
-	    {
-	      "pagePath": "pages/news/news",
-	      "text": "新品",
-	      "iconPath": "./static/img/new.jpg",
-	      "selectedIconPath": "./static/img/new-active.jpg"
-	    },
-	    {
-	      "pagePath": "pages/shop/shop",
-	      "text": "购物车",
-	      "iconPath": "./static/img/cart.jpg",
-	      "selectedIconPath": "./static/img/cart-active.jpg"
-	    },
-	    {
-	      "pagePath": "pages/mine/mine",
-	      "text": "我的",
-	      "iconPath": "./static/img/mine.jpg",
-	      "selectedIconPath": "./static/img/mine-active.jpg"
-	    }
-	  ]
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "./static/img/home.jpg",
+				"selectedIconPath": "./static/img/home-active.jpg"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"text": "新品",
+				"iconPath": "./static/img/new.jpg",
+				"selectedIconPath": "./static/img/new-active.jpg"
+			},
+			{
+				"pagePath": "pages/shop/shop",
+				"text": "购物车",
+				"iconPath": "./static/img/cart.jpg",
+				"selectedIconPath": "./static/img/cart-active.jpg"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "./static/img/mine.jpg",
+				"selectedIconPath": "./static/img/mine-active.jpg"
+			}
+		]
 	}
 }

@@ -1,23 +1,24 @@
 <template>
 	<view class="content">
 		<image class="backgroundimg" src="../../static/img/bg.jpg"/>
-		<!-- 轮播图开始 -->
-		<view class="swiper">
-			<!-- 左边框 -->
-			<view class="left"></view>
-			<!-- 轮播图图片 -->
-			<view class="home_list">
-				<swiper indicator-dots="true" autoplay="true" interval="2000" circular="true">
-				  <block v-for="(item, index) in banner" :key="index">
-				    <swiper-item>
-				      <image :src="item"></image>
-				    </swiper-item>
-				  </block>
-				</swiper>
-			</view>
-			<!-- 右边框 -->
-			<view class="right"></view>
-		</view>
+				<!-- 轮播图开始 -->
+				<view class="swiper">
+					<!-- 左边框 -->
+					<view class="left"></view>
+					<!-- 轮播图图片 -->
+					<view class="home_list">
+						<swiper indicator-dots="true" autoplay="true" interval="2000" circular="true">
+						  <block v-for="(item, index) in banner" :key="index">
+						    <swiper-item>
+						      <image :src="item"></image>
+						    </swiper-item>
+						  </block>
+						</swiper>
+					</view>
+					<!-- 右边框 -->
+					<view class="right"></view>
+				</view>
+
 		<!-- 轮播图结束 -->
 		<!-- 拼团开始 -->
 		<view class="pinker">
@@ -65,13 +66,13 @@
 				</view>
 				<view class="timeBox">
 					<view class="line left"></view>
-					<view class="">剩余</view>
+					<view class="timeBoxText">剩余</view>
 					<view class="timeNum">23</view>
 					<view class="">:</view>
 					<view class="timeNum">23</view>
 					<view class="">:</view>
 					<view class="timeNum">23</view>
-					<view class="">结束</view>
+					<view class="timeBoxText">结束</view>
 					<view class="line right"></view>
 				</view>
 			</view>
@@ -256,7 +257,7 @@
 		  <!-- 排行内容 -->
 		  <view class="rowList">
 		      <!-- 商品 -->
-			<block v-for="item,index in 3" :key="index">
+			<block v-for="(item,index) in 3" :key="index">
 		      <view class='center'>
 		        <!-- 图片 -->
 		        <image src="../../static/img/pillow_2.gif" ></image>
@@ -281,7 +282,7 @@
 		<view class="like">
 		  <view class='title'>猜你喜欢</view>
 		  <view class="likeList">
-		    <block v-for="item,index in 4" :key="index">
+		    <block v-for="(item,index) in 4" :key="index">
 		      <view class="like-item" bindtap='goDetail'>
 		        <image src="../../static/img/pillow_2.gif"></image>
 		        <view class="new_text1">泰国波浪平面枕</view>
@@ -297,9 +298,6 @@
 		  <!-- 查看全部宝贝结束 -->
 		</view>
 		<!-- 猜你喜欢结束 -->
-		
-		
-		
 	</view>
 </template>
 
@@ -307,6 +305,7 @@
 	export default {
 		data() {
 			return {
+				title: 'Hello',
 				banner:["../../static/img/1.jpg","../../static/img/bg.jpg"]
 			}
 		},
@@ -320,7 +319,6 @@
 </script>
 
 <style>
-	@import "./index.css";
-	
+	@import url("./index.css");
 </style>
   

@@ -4,9 +4,14 @@
     "pages/news/news",
     "pages/shop/shop",
     "pages/mine/mine",
+    "pages/details/details",
+    "pages/cart/cart",
+    "pages/settlement/settlement",
+    "pages/location/location",
     "pages/collect/collect",
     "pages/coupon/coupon",
-    "pages/browse/browse"
+    "pages/browse/browse",
+    "pages/refund/refund"
   ],
   "subPackages": [],
   "window": {
@@ -44,5 +49,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap3.json"
+  "sitemapLocation": "sitemap0.json"
 }
