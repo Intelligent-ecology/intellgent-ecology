@@ -98,7 +98,9 @@
 		methods: {
 			// 查看全部订单
 			allOrder(){
-				console.log('allOrder');
+				wx.navigateTo({
+					url:"/pages/myOrder/myOrder"
+				})
 			},
 			// 待付款
 			payment(){

@@ -4,12 +4,19 @@
 		<view class='order'>
 			<!-- 设置收货地址 -->
 			<view class='order-header' @tap="location">
-				<view class="oldLocation">
+				<view class="oldLocation" v-if="!userInfo">
 					<van-icon class='location' name="location-o" color='#248756' />
-					<text>请选择收货地址</text>
+					<text class="chooseAdd">请选择收货地址</text>
 					<van-icon class="arrow" name="arrow" />
 				</view>
-				<view class="newLocation"></view>
+				<view class="newLocation" v-if="userInfo">
+					<van-icon class='location' name="location-o" color='#248756' />
+					<view class="userInfo">
+						<text class="txt1">{{userInfo.name}},{{userInfo.phone}}</text>
+						<text class="txt2">{{userInfo.address}}</text>
+					</view>
+					<van-icon class="arrow" name="arrow" />
+				</view>
 			</view>
 			<!-- 彩条 -->
 			<view class='Colorbar'>
@@ -121,7 +128,8 @@
 				show: false,
 				radio: '1',
 				name: '',
-				avatar: ''
+				avatar: '',
+				userInfo:''
 			}
 		},
 		methods: {
@@ -182,6 +190,13 @@
 					}
 					that.productList = list
 					that.totalPrice = totalPrice
+				}
+			})
+			uni.getStorage({
+				key:"userInfo",
+				success(e){
+					that.userInfo=JSON.parse(e.data)
+					// console.log(e.data)
 				}
 			})
 		}

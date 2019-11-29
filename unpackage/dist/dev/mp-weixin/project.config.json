@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
 	"appid": "touristappid",
-	"projectname": "%E6%99%BA%E8%83%BD%E7%94%9F%E6%80%81%E5%AE%B6%E5%B1%85%E9%A6%86",
+	"projectname": "智能生态家居馆",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -22,13 +22,35 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
 			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/myOrder/myOrder",
+					"pathName": "pages/myOrder/myOrder",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/appref/appref",
+					"pathName": "pages/appref/appref",
+					"scene": null
+				}
+			]
 		}
 	}
 }
