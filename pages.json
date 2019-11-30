@@ -64,20 +64,22 @@
 		{
 			"path": "pages/browse/browse",
 			"style": {}
-		}
-	    ,{
-            "path" : "pages/myOrder/myOrder",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/appref/appref",
-            "style" : {
+		}, {
+			"path": "pages/myOrder/myOrder",
+			"style": {}
+		}, {
+			"path": "pages/appref/appref",
+			"style": {
 				"usingComponents": {
 					"van-popup": "/wxcomponents/vant/dist/popup/index"
 				}
 			}
-        }
-    ],
+		},
+		{
+			"path": "pages/refund/refund",
+			"style": {}
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "智能生态家居馆",

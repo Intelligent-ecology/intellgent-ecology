@@ -12,7 +12,8 @@
     "pages/coupon/coupon",
     "pages/browse/browse",
     "pages/myOrder/myOrder",
-    "pages/appref/appref"
+    "pages/appref/appref",
+    "pages/refund/refund"
   ],
   "subPackages": [],
   "window": {
@@ -49,5 +50,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap45.json"
 }
