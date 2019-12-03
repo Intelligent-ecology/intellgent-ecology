@@ -181,7 +181,7 @@
 			// 去结算按钮
 			settlement(){
 				wx.navigateTo({
-					url:'/pages/settlement/settlement'
+					url:'/pages/settlement/settlement?operations=1'
 				})
 			}
 		},

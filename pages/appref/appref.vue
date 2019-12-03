@@ -18,7 +18,7 @@
 			<!-- 退款原因 -->
 			<view class='cause'>
 				<text>退款原因</text>
-				<text class='chooseReason' @tap='choose'>请选择 ></text>
+				<text class='chooseReason' @tap='choose'>{{cause1?cause1:"请选择 >"}}</text>
 			</view>
 			<!-- 退款价格  -->
 			<view class='refund-price'>
@@ -34,9 +34,12 @@
 			<!--上传凭证  -->
 			<view class='upload'>
 				<view class='upload-hint'>上传凭证:</view>
-				<view class='imgs'>
+				<view class='imgs' @tap="voucher"  v-if="tempFilePaths.length==0">
 					<image src="../../static/img/photo.png" class="photo"></image>
 					<text class='add-photo'>添加图片</text>
+				</view>
+				<view class="images"  v-if="tempFilePaths.length!==0">
+					<image v-for="(item,index) in tempFilePaths" :src="item" :key="index" class="img"></image>
 				</view>
 			</view>
 			<!--提交申请  -->
@@ -82,20 +85,34 @@
 						'checked': false
 					}
 				],
-				cause1:0
+				cause1: 0,
+				tempFilePaths:[]
 			}
 		},
 		methods: {
 			choose() {
 				this.show = true
 			},
-			onClose(){
+			onClose() {
 				this.show = false
 			},
 			// 原因选择
-			radioChange(e){
-				this.cause1=this.cause[e.currentTarget.dataset.index].value
-				console.log(this.cause1)
+			radioChange(e) {
+				this.cause1 = this.cause[e.currentTarget.dataset.index].value
+				// console.log(this.cause1)
+			},
+			voucher() {
+				var that=this
+				wx.chooseImage({
+					count: 3,
+					sizeType: ['original', 'compressed'],
+					sourceType: ['album', 'camera'],
+					success(res) {
+						// tempFilePath可以作为img标签的src属性显示图片
+						that.tempFilePaths = res.tempFilePaths
+						console.log(that.tempFilePaths)
+					}
+				})
 			}
 		},
 		onLoad(options) {

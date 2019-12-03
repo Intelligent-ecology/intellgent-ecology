@@ -64,7 +64,7 @@
 				<!-- 留言 -->
 				<view class='leaveComments'>
 					<text class='text'>留言</text>
-					<text class='content'>给卖家留言</text>
+					<input type="text" value="" placeholder="给卖家留言"/>
 				</view>
 				<!-- 支付 -->
 				<view class='Pay'>
@@ -174,24 +174,48 @@
 				})
 			}
 		},
+		onLoad(options){
+			this.operations=options.operations
+		},
 		onShow() {
 			var that = this;
-			uni.getStorage({
-				key: 'cart',
-				success(e) {
-					var arr = JSON.parse(e.data)
-					var list = []
-					var totalPrice = 0;
-					for (var i = 0; i < arr.length; i++) {
-						if (arr[i].check) {
-							list.push(arr[i])
-							totalPrice += arr[i].allPrice
+			if(that.operations==0){
+				// 拼团购买
+				uni.getStorage({
+					key: 'groupcart',
+					success(e) {
+						var arr = JSON.parse(e.data)
+						var list = []
+						var totalPrice = 0;
+						for (var i = 0; i < arr.length; i++) {
+							if (arr[i].check) {
+								list.push(arr[i])
+								totalPrice += arr[i].allPrice
+							}
 						}
+						that.productList = list
+						that.totalPrice = totalPrice
 					}
-					that.productList = list
-					that.totalPrice = totalPrice
-				}
-			})
+				})
+			}else if(that.operations==1){
+				// 单独购买
+				uni.getStorage({
+					key: 'cart',
+					success(e) {
+						var arr = JSON.parse(e.data)
+						var list = []
+						var totalPrice = 0;
+						for (var i = 0; i < arr.length; i++) {
+							if (arr[i].check) {
+								list.push(arr[i])
+								totalPrice += arr[i].allPrice
+							}
+						}
+						that.productList = list
+						that.totalPrice = totalPrice
+					}
+				})
+			}
 			uni.getStorage({
 				key:"userInfo",
 				success(e){

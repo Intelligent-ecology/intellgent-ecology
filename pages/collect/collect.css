@@ -45,7 +45,7 @@
 	color: #383a3a;
 }
 .depreciate{
-	/* width: 172rpx; */
+	width: 172rpx;
 	height: 17rpx;
 	font-size: 18rpx;
 	font-weight: normal;
@@ -78,7 +78,7 @@
 	color: #ff3f3f;
 }
 .collectPeople{
-	/* width: 135rpx; */
+	width: 135rpx;
 	height: 22rpx;
 	font-size: 22rpx;
 	font-weight: normal;

@@ -66,13 +66,13 @@
 				</view>
 				<view class="timeBox">
 					<view class="line left"></view>
-					<view class="timeBoxText">剩余</view>
+					<view class="">剩余</view>
 					<view class="timeNum">23</view>
 					<view class="">:</view>
 					<view class="timeNum">23</view>
 					<view class="">:</view>
 					<view class="timeNum">23</view>
-					<view class="timeBoxText">结束</view>
+					<view class="">结束</view>
 					<view class="line right"></view>
 				</view>
 			</view>
