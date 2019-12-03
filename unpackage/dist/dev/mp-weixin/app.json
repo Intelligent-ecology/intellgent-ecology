@@ -11,8 +11,13 @@
     "pages/collect/collect",
     "pages/coupon/coupon",
     "pages/browse/browse",
+<<<<<<< HEAD
     "pages/myOrder/myOrder",
     "pages/appref/appref"
+=======
+    "pages/refund/refund",
+    "pages/evaluation/evaluation"
+>>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
   ],
   "subPackages": [],
   "window": {
@@ -49,5 +54,10 @@
       }
     ]
   },
+<<<<<<< HEAD
   "usingComponents": {}
+=======
+  "usingComponents": {},
+  "sitemapLocation": "sitemap82.json"
+>>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 }

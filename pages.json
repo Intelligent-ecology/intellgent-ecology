@@ -4,7 +4,8 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "智能生态家居馆",
-				"navigationStyle": "custom"
+				"navigationStyle": "custom",
+				"navigationBarTextStyle":"white"
 			}
 		}, {
 			"path": "pages/news/news",
@@ -14,7 +15,9 @@
 			"style": {}
 		}, {
 			"path": "pages/mine/mine",
-			"style": {}
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}, {
 			"path": "pages/details/details",
 			"style": {
@@ -64,6 +67,23 @@
 		{
 			"path": "pages/browse/browse",
 			"style": {}
+<<<<<<< HEAD
+=======
+		},
+		{
+			"path": "pages/refund/refund",
+			"style": {}
+		},
+		{
+			"path": "pages/evaluation/evaluation",
+			"style": {
+				"usingComponents": {
+					"van-icon": "/wxcomponents/vant/dist/icon/index",
+					"van-button": "/wxcomponents/vant/dist/button/index",
+					 "van-rate": "/wxcomponents/vant/dist/rate/index"
+				}
+			}
+>>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 		}
 	    ,{
             "path" : "pages/myOrder/myOrder",

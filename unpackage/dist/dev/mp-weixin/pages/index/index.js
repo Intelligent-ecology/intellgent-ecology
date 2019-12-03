@@ -415,38 +415,105 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
     return {
       title: 'Hello',
-      banner: ["../../static/img/1.jpg", "../../static/img/bg.jpg"] };
+      banner: ["../../static/img/1.jpg", "../../static/img/bg.jpg"],
+      newsList: [{
+        id: 1,
+        img: "../../static/img/4.png",
+        title: "泰国平面波浪枕",
+        material: "泰国天然乳胶原料",
+        price: "228.0",
+        collect: false },
+      {
+        id: 2,
+        img: "../../static/img/4.png",
+        title: "泰国平面波浪枕",
+        material: "泰国天然乳胶原料",
+        price: "228.0",
+        collect: false },
+      {
+        id: 3,
+        img: "../../static/img/4.png",
+        title: "泰国平面波浪枕",
+        material: "泰国天然乳胶原料",
+        price: "228.0",
+        collect: false }],
+
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+      nvabarData: "智能生态家居馆" };
 
   },
-  onLoad: function onLoad() {
 
-  },
-  methods: {} };exports.default = _default;
+  methods: {
+    more: function more() {
+      console.log(111);
+      wx.switchTab({
+        url: "/pages/news/news" });
+
+    },
+    coupon: function coupon() {
+      wx.navigateTo({
+        url: "/pages/coupon/coupon" });
+
+    },
+    goDetail: function goDetail(e) {
+      wx.navigateTo({
+        url: "../details/details?item=" + JSON.stringify(this.newsList[e.currentTarget.dataset.index]) });
+
+    } },
+
+
+  onShow: function onShow() {
+    var _this = this;
+    var timer;
+    function time() {
+      var date = new Date();
+      // 获取当前时间距离----毫秒数
+      var m1 = date.getTime();
+      // 设置为当前天凌晨0:0:0
+      date.setHours(0);
+      date.setMinutes(0);
+      date.setSeconds(0);
+      // 获取当前天凌晨距离----毫秒数
+      var m0 = date.getTime();
+      // 获取距离明天的秒数
+      var m = 60 * 60 * 24 - (m1 - m0) / 1000;
+      // console.log(m);
+      if (m <= 0) {
+        clearInterval(timer);
+        return;
+      }
+      var hour = parseInt(m / 3600);
+      var minute = parseInt(m % 3600 / 60);
+      var second = parseInt(m % 3600 % 60);
+      if (hour < 10) {
+        _this.hours = "0" + hour;
+      } else {
+        _this.hours = hour;
+      }
+      if (minute < 10) {
+        _this.minutes = "0" + minute;
+      } else {
+        _this.minutes = minute;
+      }
+      if (second < 10) {
+        _this.seconds = "0" + second;
+      } else {
+        _this.seconds = second;
+      }
+
+
+      // console.log(_this.hours,_this.minutes,_this.seconds);
+    }
+    setInterval(time, 1000);
+
+  } };exports.default = _default;
 
 /***/ }),
 /* 22 */

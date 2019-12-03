@@ -1,6 +1,7 @@
 <template>
 	<view class="content">
 		<image class="backgroundimg" src="../../static/img/bg.jpg"/>
+		<view class="titleNameTitle">智能生态家居馆</view>
 				<!-- 轮播图开始 -->
 				<view class="swiper">
 					<!-- 左边框 -->
@@ -66,13 +67,23 @@
 				</view>
 				<view class="timeBox">
 					<view class="line left"></view>
+<<<<<<< HEAD
 					<view class="">剩余</view>
 					<view class="timeNum">23</view>
+=======
+					<view class="timeBoxText">剩余</view>
+					<view class="timeNum">{{hours}}</view>
+>>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 					<view class="">:</view>
-					<view class="timeNum">23</view>
+					<view class="timeNum">{{minutes}}</view>
 					<view class="">:</view>
+<<<<<<< HEAD
 					<view class="timeNum">23</view>
 					<view class="">结束</view>
+=======
+					<view class="timeNum">{{seconds}}</view>
+					<view class="timeBoxText">结束</view>
+>>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 					<view class="line right"></view>
 				</view>
 			</view>
@@ -86,31 +97,10 @@
 				<view class="coupon-name">先领券  再购物</view>
 			</view>
 			<view class="coupon-img">
-				<view class="coupon-card">
+				<view class="coupon-card" v-for="(item,index) in 4" :key="index">
 					<view class="coupon-cardTitle">RMB</view>
 					<view class="coupon-price">100</view>
-					<view class="coupon-receive">x</view>
-					<view class="coupon-collect">收藏+关注</view>
-					<image src="../../static/img/empty.png"></image>
-				</view>
-				<view class="coupon-card">
-					<view class="coupon-cardTitle">RMB</view>
-					<view class="coupon-price">100</view>
-					<view class="coupon-receive">x</view>
-					<view class="coupon-collect">收藏+关注</view>
-					<image src="../../static/img/empty.png"></image>
-				</view>
-				<view class="coupon-card">
-					<view class="coupon-cardTitle">RMB</view>
-					<view class="coupon-price">100</view>
-					<view class="coupon-receive">x</view>
-					<view class="coupon-collect">收藏+关注</view>
-					<image src="../../static/img/empty.png"></image>
-				</view>
-				<view class="coupon-card">
-					<view class="coupon-cardTitle">RMB</view>
-					<view class="coupon-price">100</view>
-					<view class="coupon-receive">x</view>
+					<view class="coupon-receive" @click="coupon">x</view>
 					<view class="coupon-collect">收藏+关注</view>
 					<image src="../../static/img/empty.png"></image>
 				</view>
@@ -138,7 +128,7 @@
 		  <view class='con'>
 		    <image src='../../static/img/logo2.gif' class='iconImg'></image>
 		    <text>￥</text><text class='price'>228.00</text>
-		    <view class='button'>
+		    <view class='button' @click="buy">
 		      <text>立即购买</text>
 		      <icon class='iconfont icon-youjiantou'></icon>
 		    </view>
@@ -157,7 +147,7 @@
 		    <view class='bodyPrice'>
 		      <text>￥</text><text class='price'>228.00</text>
 		    </view>
-		    <view class='button'>
+		    <view class='button' @click="buy">
 		      <text>立即购买</text>
 		      <icon class='iconfont icon-youjiantou'></icon>
 		    </view>
@@ -182,7 +172,7 @@
 		      <view class='bottom'>
 		        <image src='../../static/img/logo2.gif' class='iconimg'></image>
 		        <text>￥</text><text class="price">238.00</text>
-		        <view class='button'>
+		        <view class='button' @click="buy">
 		          <text>立即购买</text>
 		          <icon class='iconfont icon-youjiantou'></icon>
 		        </view>
@@ -194,7 +184,7 @@
 		      <view class='bottom'>
 		        <image src='../../static/img/logo2.gif' class='iconimg'></image>
 		        <text>￥</text><text class="price">228.00</text>
-		        <view class='button'>
+		        <view class='button' @click="buy">
 		          <text>立即购买</text>
 		          <icon class='iconfont icon-youjiantou'></icon>
 		        </view>
@@ -221,7 +211,7 @@
 		      <view class='bottom'>
 		        <image src='../../static/img/logo2.gif' class='iconimg'></image>
 		        <text>￥</text><text class="price">238.00</text>
-		        <view class='button'>
+		        <view class='button' @click="buy">
 		          <text>立即购买</text>
 		          <icon class='iconfont icon-youjiantou'></icon>
 		        </view>
@@ -233,7 +223,7 @@
 		      <view class='bottom'>
 		        <image src='../../static/img/logo2.gif' class='iconimg'></image>
 		        <text>￥</text><text class="price">228.00</text>
-		        <view class='button'>
+		        <view class='button' @click="buy">
 		          <text>立即购买</text>
 		          <icon class='iconfont icon-youjiantou'></icon>
 		        </view>
@@ -283,7 +273,7 @@
 		  <view class='title'>猜你喜欢</view>
 		  <view class="likeList">
 		    <block v-for="(item,index) in 4" :key="index">
-		      <view class="like-item" bindtap='goDetail'>
+		      <view class="like-item" @click='goDetail'  :data-id="item.id" :data-index="index">
 		        <image src="../../static/img/pillow_2.gif"></image>
 		        <view class="new_text1">泰国波浪平面枕</view>
 		        <view class="new_text2">泰国天然乳胶原料</view>
@@ -292,7 +282,7 @@
 		    </block>
 		  </view>
 		  <!-- 查看全部宝贝开始 -->
-		  <view class='seeMore'>
+		  <view class='seeMore' @click="more">
 		    <text>查看全部宝贝</text>
 		  </view>
 		  <!-- 查看全部宝贝结束 -->
@@ -306,14 +296,99 @@
 		data() {
 			return {
 				title: 'Hello',
-				banner:["../../static/img/1.jpg","../../static/img/bg.jpg"]
+				banner:["../../static/img/1.jpg","../../static/img/bg.jpg"],
+				newsList:[{
+					id:1,
+					img:"../../static/img/4.png",
+					title:"泰国平面波浪枕",
+					material:"泰国天然乳胶原料",
+					price:"228.0",
+					collect:false
+				},{
+					id:2,
+					img:"../../static/img/4.png",
+					title:"泰国平面波浪枕",
+					material:"泰国天然乳胶原料",
+					price:"228.0",
+					collect:false
+				},{
+					id:3,
+					img:"../../static/img/4.png",
+					title:"泰国平面波浪枕",
+					material:"泰国天然乳胶原料",
+					price:"228.0",
+					collect:false
+				}],
+				hours:0,
+				minutes:0,
+				seconds:0,
+				nvabarData:"智能生态家居馆"
 			}
 		},
-		onLoad() {
-
-		},
+	
 		methods: {
-
+			more(){
+				console.log(111);
+				wx.switchTab({
+					url:"/pages/news/news"
+				})
+			},
+			coupon(){
+				wx.navigateTo({
+					url:"/pages/coupon/coupon"
+				})
+			},
+			goDetail(e){
+				wx.navigateTo({
+					url:"../details/details?item="+JSON.stringify(this.newsList[e.currentTarget.dataset.index])
+				})
+			}
+			
+		},
+		onShow(){
+			let _this=this
+			var timer
+	       function time(){
+	            var date = new Date();
+	            // 获取当前时间距离----毫秒数
+	            var m1 = date.getTime();
+	            // 设置为当前天凌晨0:0:0
+	            date.setHours(0);
+	            date.setMinutes(0);
+	            date.setSeconds(0);
+	            // 获取当前天凌晨距离----毫秒数
+	            var m0 = date.getTime();
+	            // 获取距离明天的秒数
+	            var m = 60*60*24 - (m1-m0)/1000;
+				// console.log(m);
+	            if(m<=0){
+	                clearInterval(timer);
+	                return
+	            }
+				var hour = parseInt(m/3600);
+				var minute = parseInt((m%3600)/60)
+				var second = parseInt((m%3600%60))
+				if(hour<10){
+					_this.hours="0"+hour
+				}else{
+					_this.hours=hour
+				}
+				if(minute<10){
+					_this.minutes="0"+minute
+				}else{
+					_this.minutes=minute
+				}
+				if(second<10){
+					_this.seconds="0"+second
+				}else{
+					_this.seconds=second
+				}
+				
+				
+				// console.log(_this.hours,_this.minutes,_this.seconds);
+	        }
+	        setInterval(time,1000);
+			
 		}
 	}
 </script>

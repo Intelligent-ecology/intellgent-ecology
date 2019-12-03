@@ -75,7 +75,7 @@
 	margin-left: 26rpx;
 }
 .bottom{
-	width: 219rpx;
+	/* width: 219rpx; */
 	height: 44rpx;
 	font-size: 46rpx;
 	font-weight: normal;
@@ -96,7 +96,7 @@
 	text-align: center;
 }
 .moneyOff{
-	width: 170rpx;
+	/* width: 170rpx; */
 	height: 34rpx;
 	font-size: 36rpx;
 	font-weight: normal;

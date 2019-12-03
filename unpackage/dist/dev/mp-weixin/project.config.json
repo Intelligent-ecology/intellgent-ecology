@@ -22,20 +22,13 @@
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
 		"game": {
-			"current": -1,
-			"list": []
-		},
-		"gamePlugin": {
 			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": -1,
+<<<<<<< HEAD
 			"list": [
 				{
 					"id": -1,
@@ -44,6 +37,9 @@
 					"scene": null
 				}
 			]
+=======
+			"list": []
+>>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 		}
 	}
 }
