@@ -9,8 +9,15 @@
 	position: relative;
 	height: 710rpx;
 }
-.topImg image{
+.topImg swiper{
+	height:100%;
+}
+.topImg swiper-item{
 	display: block;
+	width:100%;
+	height:100%;
+}
+.topImg swiper-item image{
 	width:100%;
 	height:100%;
 }
@@ -37,6 +44,11 @@
 .topImg view .iconfont{
 	font-size: 36rpx;
 	color: #fff;
+}
+.topImg .index{
+	position: absolute;
+	bottom:50rpx;
+	right:50rpx;
 }
 /* 商品信息 */
 .product{

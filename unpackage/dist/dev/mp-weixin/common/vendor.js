@@ -1617,9 +1617,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 15:
-/*!********************************************************************************!*\
-  !*** C:/Users/Mr.Wang/Desktop/aaa/intellgent-ecology/static/font/iconfont.css ***!
-  \********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/ding/intellgent-ecology/static/font/iconfont.css ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7622,9 +7622,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!******************************************************************!*\
-  !*** C:/Users/Mr.Wang/Desktop/aaa/intellgent-ecology/pages.json ***!
-  \******************************************************************/
+/*!*******************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/ding/intellgent-ecology/pages.json ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8521,9 +8521,9 @@ main();
 /***/ }),
 
 /***/ 54:
-/*!*********************************************************************************************!*\
-  !*** C:/Users/Mr.Wang/Desktop/aaa/intellgent-ecology/wxcomponents/vant/dist/toast/toast.js ***!
-  \*********************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/ding/intellgent-ecology/wxcomponents/vant/dist/toast/toast.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8598,9 +8598,9 @@ Toast;exports.default = _default;
 /***/ }),
 
 /***/ 55:
-/*!**********************************************************************************************!*\
-  !*** C:/Users/Mr.Wang/Desktop/aaa/intellgent-ecology/wxcomponents/vant/dist/common/utils.js ***!
-  \**********************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/ding/intellgent-ecology/wxcomponents/vant/dist/common/utils.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8652,21 +8652,21 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ }),
 
 /***/ 7:
-/*!***********************************************************************************!*\
-  !*** C:/Users/Mr.Wang/Desktop/aaa/intellgent-ecology/pages.json?{"type":"style"} ***!
-  \***********************************************************************************/
+/*!************************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/ding/intellgent-ecology/pages.json?{"type":"style"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom", "usingComponents": {} }, "pages/news/news": { "usingComponents": {} }, "pages/shop/shop": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} }, "pages/details/details": { "navigationStyle": "custom", "usingComponents": {} }, "pages/cart/cart": { "usingComponents": {} }, "pages/settlement/settlement": { "usingComponents": {} }, "pages/location/location": { "usingComponents": {} }, "pages/collect/collect": { "usingComponents": {} }, "pages/coupon/coupon": { "usingComponents": {} }, "pages/browse/browse": { "usingComponents": {} }, "pages/myOrder/myOrder": { "usingComponents": {} }, "pages/appref/appref": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "智能生态家居馆", "navigationStyle": "custom" }, "pages/news/news": {}, "pages/shop/shop": {}, "pages/mine/mine": {}, "pages/details/details": { "navigationStyle": "custom" }, "pages/cart/cart": {}, "pages/settlement/settlement": {}, "pages/location/location": {}, "pages/collect/collect": {}, "pages/coupon/coupon": {}, "pages/browse/browse": {}, "pages/myOrder/myOrder": {}, "pages/appref/appref": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "智能生态家居馆", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 
 /***/ 8:
-/*!**********************************************************************************!*\
-  !*** C:/Users/Mr.Wang/Desktop/aaa/intellgent-ecology/pages.json?{"type":"stat"} ***!
-  \**********************************************************************************/
+/*!***********************************************************************************!*\
+  !*** C:/Users/Mr.Wang/Desktop/ding/intellgent-ecology/pages.json?{"type":"stat"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

@@ -6,13 +6,13 @@
 					<view class="location_top">
 						<view class="t_left">
 							<text class="name">{{item.name}}，{{item.phone}}</text>
-							<text class="address">{{item.address}}</text>
+							<text class="address">{{item.address}}{{item.detail}}</text>
 						</view>
 						<view class="t_right">
 							<van-icon name="cross" class="cross" @tap="del" :data-index="index"/>
 							<view>
 								<van-icon name="success" v-if="curIndex1==index" />
-								<van-button @tap="use" :data-index="index" size="mini" type="default" class="btn1" wx:else>使用</van-button>
+								<van-button @tap="use" :data-index="index" size="mini" type="default" class="btn1" v-if="curIndex1!==index">使用</van-button>
 							</view>
 						</view>
 					</view>
@@ -74,23 +74,26 @@
 					name:"巫宇",
 					phone:"15332952873",
 					address:"北京市 北京市 西城区",
+					detail:"",
 					top:false,
 					def:true
 				},{
 					name:"张三",
 					phone:"15332952873",
 					address:"北京市 北京市 西城区",
+					detail:'',
 					top:false,
 					def:false
 				},{
 					name:"李四",
 					phone:"15332952873",
 					address:"北京市 北京市 西城区",
+					detail:'',
 					top:false,
 					def:false
 				}],
 				show:false,
-				curIndex:0,
+				curIndex:'',
 				curIndex1:0,
 				text:"已设为默认",
 				text1:"设为默认",
@@ -119,11 +122,15 @@
 			// 使用
 			use(e){
 				this.curIndex1=e.currentTarget.dataset.index
-				// console.log(this.userInfo[e.currentTarget.dataset.index])
+				console.log(this.curIndex1)
 				wx.navigateBack()
 				uni.setStorage({
 					key:"userInfo",
 					data:JSON.stringify(this.userInfo[e.currentTarget.dataset.index])
+				})
+				uni.setStorage({
+					key:"useIndex",
+					data:this.curIndex1
 				})
 			},
 			// 置顶
@@ -210,6 +217,16 @@
 					this.show=false
 				}
 			}
+		},
+		onShow(){
+			var that=this
+			uni.getStorage({
+				key:"useIndex",
+				success(e){
+					that.curIndex1=e.data
+					console.log(that.curIndex1)
+				}
+			})
 		}
 	}
 </script>

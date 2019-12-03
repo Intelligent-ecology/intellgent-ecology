@@ -39,15 +39,8 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/myOrder/myOrder",
-					"pathName": "pages/myOrder/myOrder",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/appref/appref",
-					"pathName": "pages/appref/appref",
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
 					"scene": null
 				}
 			]

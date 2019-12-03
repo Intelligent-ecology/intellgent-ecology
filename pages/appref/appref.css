@@ -105,6 +105,11 @@
 	height: 40rpx;
 	margin-bottom: 24rpx;
 }
+.applyRefund .upload .images .img{
+	width: 128rpx;
+	height: 128rpx;
+	margin-right:20rpx;
+}
 
 .applyRefund .upload .upload-hint {
 	margin-bottom: 30rpx;

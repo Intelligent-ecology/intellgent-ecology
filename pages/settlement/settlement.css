@@ -195,13 +195,17 @@
 
 /* 留言 */
 .leaveComments {
+	display: flex;
+	align-items: center;
 	width: 100%;
 	background: #fff;
 	font-size: 26rpx;
 	padding: 24rpx 0;
 	margin-bottom: 10rpx;
 }
-
+.leaveComments .text{
+	margin-right: 40rpx;
+}
 .content {
 	margin-left: 62rpx;
 	color: #999;
