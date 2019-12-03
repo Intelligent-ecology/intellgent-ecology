@@ -1,8 +1,5 @@
 <template>
 	<view class="refund">
-<<<<<<< HEAD
-		退款售后
-=======
 		<!-- 退款内容开始 -->
 		<view class="content">
 			<view class="refund-top">
@@ -65,7 +62,6 @@
 			</view>
 			<image src="../../static/img/empty.png" mode=""></image>
 		</view>
->>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 	</view>
 </template>
 
@@ -90,4 +86,5 @@
 </script>
 
 <style>
+	@import url('./refund.css');
 </style>

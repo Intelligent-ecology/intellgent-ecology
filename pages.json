@@ -9,10 +9,14 @@
 			}
 		}, {
 			"path": "pages/news/news",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "新品"
+			}
 		}, {
 			"path": "pages/shop/shop",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
 		}, {
 			"path": "pages/mine/mine",
 			"style": {
@@ -27,12 +31,10 @@
 					"van-toast": "/wxcomponents/vant/dist/toast/index"
 				}
 			}
-		}, {
-			"path": "pages/cart/cart",
-			"style": {}
-		}, {
+		},{
 			"path": "pages/settlement/settlement",
 			"style": {
+				"navigationBarTitleText": "确认订单",
 				"usingComponents": {
 					"van-popup": "/wxcomponents/vant/dist/popup/index",
 					"van-dialog": "/wxcomponents/vant/dist/dialog/index",
@@ -46,6 +48,7 @@
 		}, {
 			"path": "pages/location/location",
 			"style": {
+				"navigationBarTitleText": "收货地址",
 				"usingComponents": {
 					"van-icon": "/wxcomponents/vant/dist/icon/index",
 					"van-button": "/wxcomponents/vant/dist/button/index",
@@ -58,40 +61,49 @@
 		},
 		{
 			"path": "pages/collect/collect",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "商品收藏"
+			}
 		},
 		{
 			"path": "pages/coupon/coupon",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "领券中心"
+			}
 		},
 		{
 			"path": "pages/browse/browse",
-			"style": {}
-<<<<<<< HEAD
-=======
+			"style": {
+				"navigationBarTitleText": "浏览记录"
+			}
 		},
 		{
 			"path": "pages/refund/refund",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "退款/售后"
+			}
 		},
 		{
 			"path": "pages/evaluation/evaluation",
 			"style": {
+				"navigationBarTitleText": "售后评价",
 				"usingComponents": {
 					"van-icon": "/wxcomponents/vant/dist/icon/index",
 					"van-button": "/wxcomponents/vant/dist/button/index",
 					 "van-rate": "/wxcomponents/vant/dist/rate/index"
 				}
 			}
->>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 		}
 	    ,{
             "path" : "pages/myOrder/myOrder",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "我的订单"
+			}
         }
         ,{
             "path" : "pages/appref/appref",
             "style" : {
+				"navigationBarTitleText": "申请退款",
 				"usingComponents": {
 					"van-popup": "/wxcomponents/vant/dist/popup/index"
 				}

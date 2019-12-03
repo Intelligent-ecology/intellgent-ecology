@@ -28,18 +28,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-<<<<<<< HEAD
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/details/details",
-					"pathName": "pages/details/details",
-					"scene": null
-				}
-			]
-=======
 			"list": []
->>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 		}
 	}
 }

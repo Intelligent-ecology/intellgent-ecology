@@ -1,7 +1,7 @@
 <template>
 	<view class="collect">
-		<view class="content"  >
-			<view class="commodity"v-for="(item,index) in news" :key="index">
+		<view class="content" v-if="news.length">
+			<view class="commodity" v-for="(item,index) in news" :key="index">
 				<image :src="item.img" class="img"></image>
 				<view class="content-text">
 					<view class="title">
@@ -21,7 +21,7 @@
 			</view>
 		</view>
 		<!-- 没有收藏商品时开始 -->
-		<view class="none" v-show=true>
+		<view class="none" v-else>
 			<view class="text">
 				暂无商品收藏
 			</view>
@@ -43,11 +43,21 @@
 		},
 		onLoad() {
 			var that=this
+			var arr=[]
 			uni.getStorage({
 				key:'collectList',
 				success(e){
 					that.news=JSON.parse(e.data)
 					console.log(JSON.parse(e.data));
+					that.news.forEach((item,index)=>{
+						if(item.collect){
+							arr.push(item)
+						}
+					})
+					that.news=arr
+				},
+				fail: function() {
+					that.news=[]
 				}
 			})
 		}

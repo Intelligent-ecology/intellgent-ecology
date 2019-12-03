@@ -5,19 +5,15 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/details/details",
-    "pages/cart/cart",
     "pages/settlement/settlement",
     "pages/location/location",
     "pages/collect/collect",
     "pages/coupon/coupon",
     "pages/browse/browse",
-<<<<<<< HEAD
+    "pages/refund/refund",
+    "pages/evaluation/evaluation",
     "pages/myOrder/myOrder",
     "pages/appref/appref"
-=======
-    "pages/refund/refund",
-    "pages/evaluation/evaluation"
->>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
   ],
   "subPackages": [],
   "window": {
@@ -54,10 +50,5 @@
       }
     ]
   },
-<<<<<<< HEAD
   "usingComponents": {}
-=======
-  "usingComponents": {},
-  "sitemapLocation": "sitemap82.json"
->>>>>>> 344147275260da45eb97dc2695cf64776b290ea3
 }

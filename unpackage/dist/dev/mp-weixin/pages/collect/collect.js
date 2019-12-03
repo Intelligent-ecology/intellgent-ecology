@@ -167,11 +167,21 @@ var _default =
 
   onLoad: function onLoad() {
     var that = this;
+    var arr = [];
     uni.getStorage({
       key: 'collectList',
       success: function success(e) {
         that.news = JSON.parse(e.data);
         console.log(JSON.parse(e.data));
+        that.news.forEach(function (item, index) {
+          if (item.collect) {
+            arr.push(item);
+          }
+        });
+        that.news = arr;
+      },
+      fail: function fail() {
+        that.news = [];
       } });
 
   } };exports.default = _default;
