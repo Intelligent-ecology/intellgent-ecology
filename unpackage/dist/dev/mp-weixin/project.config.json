@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
 	"appid": "wx218f06333dbdd6fa",
-	"projectname": "%E6%99%BA%E8%83%BD%E7%94%9F%E6%80%81%E5%AE%B6%E5%B1%85%E9%A6%86",
+	"projectname": "智能生态家居馆",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

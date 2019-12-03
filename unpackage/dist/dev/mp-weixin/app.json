@@ -11,7 +11,8 @@
     "pages/collect/collect",
     "pages/coupon/coupon",
     "pages/browse/browse",
-    "pages/refund/refund"
+    "pages/refund/refund",
+    "pages/evaluation/evaluation"
   ],
   "subPackages": [],
   "window": {
@@ -49,5 +50,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap58.json"
+  "sitemapLocation": "sitemap82.json"
 }

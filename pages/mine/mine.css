@@ -4,8 +4,11 @@
 }
 .header{
 	width: 750rpx;
-	height: 287rpx;
+	height: 400rpx;
 	background: #1ca95e;
+	box-sizing: border-box;
+	padding-top: 121rpx;
+	z-index:10
 }
 .icon{
 	width: 750rpx;

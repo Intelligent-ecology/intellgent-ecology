@@ -154,7 +154,7 @@
 	position: relative;
 }
 .refund-bottom view{
-	width: 144rpx;
+	/* width: 144rpx; */
 	height: 55rpx;
 	border-radius: 28rpx;
 	border: solid 1rpx #dc3025;
@@ -166,6 +166,14 @@
 	color: #da2015;
 	text-align: center;
 	line-height: 55rpx;
+	padding: 0 10rpx;
+}
+.onSubmit{
+	position: absolute;
+	right: 170rpx;
+	top: 21rpx;
+}
+.onDetails{
 	position: absolute;
 	right: 23rpx;
 	top: 21rpx;
