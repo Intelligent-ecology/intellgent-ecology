@@ -4,19 +4,19 @@
 				<!-- 轮播图开始 -->
 				<view class="swiper">
 					<!-- 左边框 -->
-					<view class="left"></view>
+					<!-- <view class="left"></view> -->
 					<!-- 轮播图图片 -->
 					<view class="home_list">
-						<swiper indicator-dots="true" autoplay="true" interval="2000" circular="true">
-						  <block v-for="(item, index) in banner" :key="index">
-						    <swiper-item>
-						      <image :src="item"></image>
-						    </swiper-item>
-						  </block>
-						</swiper>
+						<swiper indicator-dots="true" autoplay="true" interval="2000"   circular="true" easing-function="linear"  previous-margin="30" next-margin="30">
+												  <block wx:for="{{banner}}" wx:key="index">
+												    <swiper-item class="swiper-item center">
+												      <image src="{{item}}" class="swiper-item"></image>
+												    </swiper-item>
+												  </block>
+												</swiper>
 					</view>
 					<!-- 右边框 -->
-					<view class="right"></view>
+					<!-- <view class="right"></view> -->
 				</view>
 
 		<!-- 轮播图结束 -->
@@ -306,7 +306,7 @@
 		data() {
 			return {
 				title: 'Hello',
-				banner:["../../static/img/1.jpg","../../static/img/bg.jpg"]
+				banner:["../../static/img/1.jpg","../../static/img/bg.jpg","../../static/img/2.png","../../static/img/2.jpg"]
 			}
 		},
 		onLoad() {
